@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #f9fbfe, #e8f0fe);
+  color: #1c1c1c;
+  padding: 20px;
+}
+
+.main-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.wiki-search-header {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  padding: 40px 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wiki-logo {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 99, 182, 0.4);
+  border-color: #4c63b6;
+}
+
+/* Spinner */
+#spinner {
+  margin-top: 30px;
+}
+
+/* Results Container */
+.search-results {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Each Result */
+.result-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Title Link */
+.result-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.result-title:hover {
+  color: #4c63b6;
+  text-decoration: underline;
+}
+
+/* URL Link */
+.result-url {
+  display: block;
+  color: #27ae60;
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.result-url:hover {
+  text-decoration: underline;
+}
+
+/* Description Text */
+.link-description {
+  font-size: 15.5px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wiki-search-header {
+    padding: 30px 20px;
+  }
+
+  .search-input {
+    font-size: 15px;
+  }
+
+  .result-title {
+    font-size: 18px;
+  }
+
+  .link-description {
+    font-size: 14.5px;
+  }
+}
